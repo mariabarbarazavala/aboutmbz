@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biosite - María Barbara Zavala</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+/* Banner negro */
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Foto de perfil circular centrada sobre el banner */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    position: absolute;
+    bottom: -75px;
+}
+
+/* Nombre y usuario centrados */
+.profile-info {
+    text-align: center;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.profile-info p {
+    margin: 4px 0 16px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+/* Botones alargados */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.buttons a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 0;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.buttons a:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 480px) {
+    .profile-photo { width: 120px; height: 120px; bottom: -60px; }
+    .profile-info h1 { font-size: 28px; }
+    .profile-info p { font-size: 16px; }
+    .subtitle { font-size: 16px; }
+    .buttons a { font-size: 16px; }
+}
+
+</style>
+</head>
+<body><!-- Banner negro -->
+<div class="banner">
+    <img class="profile-photo" src="https://i.postimg.cc/TYJyy50K/ilvia-20250906-172835-0000.png" alt="Foto de perfil">
+</div>
+
+<!-- Nombre y usuario centrados -->
+<div class="profile-info">
+    <h1>María Barbara Zavala</h1>
+    <p>@mariabarbarazav</p>
+    <div class="subtitle">
+        Licenciada en administración con un posgrado en gestión empresarial con enfoque en liderazgo sistémico.
+    </div>
+</div>
+
+
+</body>
+</html> 
