@@ -1,123 +1,164 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biosite - María Barbara Zavala</title>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');* { box-sizing: border-box; }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.2;
-}
+    * { box-sizing: border-box; }
 
-/* Banner negro */
-.banner {
-    width: 100%;
-    height: 200px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        background-image:
+            radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.7) 1.2px, transparent 1.2px),
+            radial-gradient(circle, rgba(255,255,255,0.9) 0.8px, transparent 0.8px),
+            radial-gradient(circle, rgba(255,255,255,0.85) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.9) 1.3px, transparent 1.3px),
+            radial-gradient(circle, rgba(255,255,255,0.75) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.95) 1.5px, transparent 1.5px);
+        background-size: 100px 100px, 120px 120px, 140px 140px, 160px 160px,
+                          180px 180px, 200px 200px, 220px 220px, 240px 240px;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
 
-/* Foto de perfil circular centrada sobre el banner */
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid white;
-    object-fit: cover;
-    position: absolute;
-    bottom: -75px;
-}
+    .banner {
+        width: 100%;
+        max-width: 1080px;
+        height: 200px;
+        background-image: url('https://i.postimg.cc/h4fp3FJb/maria-Barbara-Zavala-20250923-211733-0000.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-/* Nombre y usuario centrados */
-.profile-info {
-    text-align: center;
-    margin-top: 100px;
-    width: 90%;
-    max-width: 600px;
-}
+    .profile-container {
+        width: 90%;
+        max-width: 600px;
+        margin-top: -75px;
+        text-align: center;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #ff00cf;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
 
-.profile-info h1 {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-}
+    .profile-info h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        color: black;
+    }
 
-.profile-info p {
-    margin: 4px 0 16px 0;
-    font-size: 20px;
-    color: #555;
-}
+    .profile-info p {
+        margin: 4px 0 12px 0;
+        font-size: 20px;
+        color: black;
+    }
 
-.subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: justify;
-    margin-bottom: 32px;
-}
+    .subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 32px;
+        color: black;
+        line-height: 1.2;
+    }
 
-/* Botones alargados */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 90%;
-    max-width: 400px;
-    margin-bottom: 40px;
-}
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-.buttons a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 14px 0;
-    border: 2px solid black;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: 0.2s;
-}
+    .buttons a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 0;
+        border: 2px solid black;
+        background-color: black;
+        color:#ff00cf;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: 0.2s;
+    }
 
-.buttons a:hover {
-    background-color: #f0f0f0;
-}
+    .buttons a:hover {
+        background-color: #222;
+    }
 
-@media (max-width: 480px) {
-    .profile-photo { width: 120px; height: 120px; bottom: -60px; }
-    .profile-info h1 { font-size: 28px; }
-    .profile-info p { font-size: 16px; }
-    .subtitle { font-size: 16px; }
-    .buttons a { font-size: 16px; }
-}
+    .emoji {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+    }
 
+    .sticker {
+        width: 2em;
+        height: 2em;
+        vertical-align: middle;
+        margin-left: 6px;
+        filter: drop-shadow(0 0 6px #ff00cf) drop-shadow(0 0 8px #ff00cf);
+    }
+
+    @media (max-width: 480px) {
+        .profile-container {
+            margin-top: -60px;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+        }
+        .profile-info h1 {
+            font-size: 28px;
+        }
+        .profile-info p,
+        .subtitle {
+            font-size: 16px;
+        }
+        .buttons a {
+            font-size: 16px;
+        }
+        .sticker {
+            width: 1.7em;
+            height: 1.7em;
+        }
+    }
 </style>
 </head>
-<body><!-- Banner negro -->
-<div class="banner">
-    <img class="profile-photo" src="https://i.postimg.cc/TYJyy50K/ilvia-20250906-172835-0000.png" alt="Foto de perfil">
-</div>
+<body>
 
-<!-- Nombre y usuario centrados -->
-<div class="profile-info">
-    <h1>María Barbara Zavala</h1>
-    <p>@mariabarbarazav</p>
-    <div class="subtitle">
-        Licenciada en administración con un posgrado en gestión empresarial con enfoque en liderazgo sistémico.
+    <div class="banner"></div>
+
+    <div class="profile-container">
+        <img class="profile-photo" src="https://i.postimg.cc/brZ928hY/file-00000000264c61fbbe925aa9462dcbcf-1.jpg" alt="Logo María Barbara Zavala">
+        <div class="profile-info">
+            <h1>María Barbara Zavala <img src="https://i.postimg.cc/c1B1tYJz/ei-1758679752019-removebg-preview.png" alt="emoji" class="emoji"></h1>
+            <p>@mariabarbarazav</p>
+            <div class="subtitle">
+                Barbara's Kingdom | Queen B <img src="https://i.postimg.cc/Njs711YP/ei-1758681124040-removebg-preview.png" alt="sticker" class="sticker"><br>
+                Mis colecciones: Maquillaje, belleza, cosmética, cosméticos, cosmetología, productos de belleza, cuidado de la piel, moda, diseño y estilo. <img src="https://i.postimg.cc/WpxR31Gy/ei-1758679784939-removebg-preview.png" alt="emoji" class="emoji">
+            </div>
     </div>
-</div>
-
 
 </body>
 </html> 
